@@ -9,4 +9,4 @@ Repository di TPSIT della classe 5J
 
 ### esercizi
 #### esercizio 1
-- arrivare fino al commit C https://github.com/angelogalanti/2017-18_5M/blob/master/git/comandi%20git.sh
+- arrivare fino al commit C (riga 74) https://github.com/angelogalanti/2017-18_5M/blob/master/git/comandi%20git.sh
