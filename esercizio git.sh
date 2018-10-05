@@ -4,9 +4,9 @@ cd example\
 git status
 touch file
 git add file
-git commit -m 'first'
-git config --global user.email "angelo.galanti@gmail.com"
-git config --global user.name "Angelo Galanti"
+#le due istruzioni seguenti solo la prima volta che si usa git
+#git config --global user.email "angelo.galanti@gmail.com"
+#git config --global user.name "Angelo Galanti"
 git commit -m 'first'
 git status
 git log
