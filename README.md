@@ -8,5 +8,5 @@ Repository di TPSIT della classe 5J
 - [learning git branching](https://learngitbranching.js.org)
 
 ### esercizi
-#### esercizio 1
-- arrivare fino al commit C (riga 74) https://github.com/angelogalanti/2017-18_5M/blob/master/git/comandi%20git.sh
+- [es1](https://github.com/angelogalanti/2017-18_5M/blob/master/git/comandi%20git.sh) arrivare fino al commit C (riga 74) 
+- [es2](https://github.com/angelogalanti/2018-19_5J/blob/master/esercizio%20git.sh)
