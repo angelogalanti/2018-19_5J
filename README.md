@@ -1,6 +1,8 @@
 # 2018-19_5J
 Repository di TPSIT della classe 5J
 
+## [Link](https://script.google.com/macros/s/AKfycbx3Mn36N3G4CfGV-ju_NDdMtc9tr9-tkwm4Md-Xrei6GoYffiAs/exec) **per fare l'upload delle verifiche**
+
 ## git
 - [cheatsheet](https://zeroturnaround.com/wp-content/uploads/2016/02/Git-Cheat-Sheet-pdf-v2.png)
 - [git guida tascabile in italiano](http://rogerdudler.github.io/git-guide/index.it.html)
