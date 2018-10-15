@@ -10,3 +10,4 @@ Repository di TPSIT della classe 5J
 ### esercizi
 - [es1](https://github.com/angelogalanti/2018-19_5J/blob/master/comandi%20git.sh) arrivare fino al commit C (riga 74) 
 - [es2](https://github.com/angelogalanti/2018-19_5J/blob/master/esercizio%20git%202%20sincronizzazione%20repository%20remoto.sh)
+- [es3](https://github.com/angelogalanti/2018-19_5J/blob/master/esercizio%20git%203%20clonare%20repository.sh)
