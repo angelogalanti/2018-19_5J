@@ -13,3 +13,9 @@ Repository di TPSIT della classe 5J
 - [es1](https://github.com/angelogalanti/2018-19_5J/blob/master/comandi%20git.sh) arrivare fino al commit C (riga 74) 
 - [es2](https://github.com/angelogalanti/2018-19_5J/blob/master/esercizio%20git%202%20sincronizzazione%20repository%20remoto.sh)
 - [es3](https://github.com/angelogalanti/2018-19_5J/blob/master/esercizio%20git%203%20clonare%20repository.sh)
+
+## sistemi distribuiti
+- [3 Tier Server Architecture](https://www.researchgate.net/figure/A-Typical-3-Tier-Server-Architecture-Tier-1-Web-Server-Tier-2-Application-Server-Tier_fig1_221147997)
+- [Difference between application server and web server](https://stackoverflow.com/questions/936197/what-is-the-difference-between-application-server-and-web-server)
+- [Redundant server architectures](https://www.e2enetworks.com/help/knowledge-base/redundant-server-architectures-from-e2e-networks/)
+- [Floating IPs](https://blog.digitalocean.com/floating-ips-start-architecting-your-applications-for-high-availability/)
