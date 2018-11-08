@@ -19,3 +19,4 @@ Repository di TPSIT della classe 5J
 - [Difference between application server and web server](https://stackoverflow.com/questions/936197/what-is-the-difference-between-application-server-and-web-server)
 - [Redundant server architectures](https://www.e2enetworks.com/help/knowledge-base/redundant-server-architectures-from-e2e-networks/)
 - [Floating IPs](https://blog.digitalocean.com/floating-ips-start-architecting-your-applications-for-high-availability/)
+- [5 common server setups for your web application](https://www.digitalocean.com/community/tutorials/5-common-server-setups-for-your-web-application)
