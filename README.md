@@ -20,3 +20,7 @@ Repository di TPSIT della classe 5J
 - [Redundant server architectures](https://www.e2enetworks.com/help/knowledge-base/redundant-server-architectures-from-e2e-networks/)
 - [Floating IPs](https://blog.digitalocean.com/floating-ips-start-architecting-your-applications-for-high-availability/)
 - [5 common server setups for your web application](https://www.digitalocean.com/community/tutorials/5-common-server-setups-for-your-web-application)
+
+## CSS
+- esercizio [Testimonial Card](https://codepen.io/angelogalanti/pen/OaVdpZ), qui la [soluzione](https://codepen.io/angelogalanti/pen/vQBbMq)
+
