@@ -23,4 +23,7 @@ Repository di TPSIT della classe 5J
 
 ## CSS
 - esercizio [Testimonial Card](https://codepen.io/angelogalanti/pen/OaVdpZ), qui la [soluzione](https://codepen.io/angelogalanti/pen/vQBbMq)
+- esercizio [Image Hover](https://codepen.io/angelogalanti/pen/vQGBwm), qui la [soluzione](https://codepen.io/angelogalanti/pen/pQJbOw)
+- esercizio [Testimonial](https://codepen.io/angelogalanti/pen/aQWqWN), qui la [soluzione](https://codepen.io/angelogalanti/pen/pQRwed)
+- esercizio [Testimonial Card](https://codepen.io/angelogalanti/pen/pQWqWE), qui la [soluzione](https://codepen.io/angelogalanti/pen/NEaeaq)
 
