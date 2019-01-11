@@ -27,3 +27,9 @@ Repository di TPSIT della classe 5J
 - esercizio [Testimonial](https://codepen.io/angelogalanti/pen/aQWqWN), qui la [soluzione](https://codepen.io/angelogalanti/pen/pQRwed)
 - esercizio [Testimonial Card](https://codepen.io/angelogalanti/pen/pQWqWE), qui la [soluzione](https://codepen.io/angelogalanti/pen/NEaeaq)
 
+## XML & AJAX
+- [Introduzione](https://www.w3schools.com/xml/default.asp)
+- [XML HttpRequest](https://www.w3schools.com/xml/xml_http.asp)
+- [XML Parser](https://www.w3schools.com/xml/xml_parser.asp)
+- [Esempio AJAX](https://www.w3schools.com/xml/tryit.asp?filename=try_dom_xmlhttprequest_responsexml)
+
