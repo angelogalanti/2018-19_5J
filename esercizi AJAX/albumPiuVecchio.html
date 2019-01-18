@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+<body>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<button type="button" onclick="loadDoc()">Get my CD collection</button>
+<br><br>
+<p id="demo"></p>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xhttp.open("GET", "cd_catalog.xml", true);
+  xhttp.send();
+}
+function myFunction(xml) {
+	var i;
+	var xmlDoc = xml.responseXML;
+	var daScrivere = "";
+  	var annoPiuVecchio = 0;
+	var ArtistaPiuVecchio = "";
+	var TitoloPiuVecchio = "";
+	var x = xmlDoc.getElementsByTagName("CD");
+	for(i=0; i<x.length; i++)
+	{
+		var titoloLetto = x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue;
+		var artistaLetto = x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue;
+		var annoLetto = x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
+		if (annoPiuVecchio == 0)
+			{
+				TitoloPiuVecchio = titoloLetto;
+				ArtistaPiuVecchio = artistaLetto;
+				annoPiuVecchio = annoLetto;
+			}
+		else if (annoLetto < annoPiuVecchio)
+			{
+				TitoloPiuVecchio = titoloLetto;
+				ArtistaPiuVecchio = artistaLetto;
+				annoPiuVecchio = annoLetto;
+			}
+  	}
+	daScrivere = ArtistaPiuVecchio + ", " + TitoloPiuVecchio + ", " + annoPiuVecchio;
+	
+  document.getElementById("demo").innerHTML = daScrivere;
+}
+</script>
+
+</body>
+</html>

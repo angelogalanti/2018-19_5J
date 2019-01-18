@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+<body>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<button type="button" onclick="loadDoc()">Get my CD collection</button>
+<br><br>
+<p id="demo"></p>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xhttp.open("GET", "cd_catalog.xml", true);
+  xhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var daScrivere = "";
+  var x = xmlDoc.getElementsByTagName("CD");
+    i = 0;
+    daScrivere += "Artist: " +
+    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+    "<br/>Title: " +
+    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    "<br/>Year: " +
+    x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
+  //}
+  document.getElementById("demo").innerHTML = daScrivere;
+}
+</script>
+
+</body>
+</html>
