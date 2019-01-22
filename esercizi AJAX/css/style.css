@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.snip1529 {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  float: left;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 10px 1%;
+  min-width: 650px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+   width: 100%; 
+   background-color: #000000; 
+   color: #ffffff; 
+   font-family: 'Open Sans', Arial, sans-serif; 
+   max-width: 310px; 
+}
+
+.snip1529 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.snip1529 img {
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+  opacity: 0.75;
+}
+
+.snip1529 figcaption {
+  padding: 25px 20px 25px; 
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.snip1529 .date {
+  min-height: 48px;
+  position: absolute;
+  right: 15px;
+  top: 0;
+   background-color: #fff; 
+   color: #333; 
+   font-size: 18px; 
+   font-weight: 800; 
+   min-width: 48px; 
+   padding: 10px 0; 
+   text-align: center; 
+   text-transform: uppercase; 
+}
+
+.snip1529 .date span {
+  display: block;
+  line-height: 14px;
+}
+
+.snip1529 .date .month {
+  font-size: 11px;
+}
+
+.snip1529 h3,
+.snip1529 p {
+  margin: 0;
+  padding: 0;
+}
+
+.snip1529 h3 {
+  font-weight: 800;
+  letter-spacing: -0.4px;
+}
+
+
+.snip1529 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.snip1529:hover .date,
+.snip1529.hover .date {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
