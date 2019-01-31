@@ -27,9 +27,14 @@ Repository di TPSIT della classe 5J
 - esercizio [Testimonial](https://codepen.io/angelogalanti/pen/aQWqWN), qui la [soluzione](https://codepen.io/angelogalanti/pen/pQRwed)
 - esercizio [Testimonial Card](https://codepen.io/angelogalanti/pen/pQWqWE), qui la [soluzione](https://codepen.io/angelogalanti/pen/NEaeaq)
 
-## XML & AJAX
+## XML, AJAX, JSON
 - [Introduzione](https://www.w3schools.com/xml/default.asp)
 - [XML HttpRequest](https://www.w3schools.com/xml/xml_http.asp)
 - [XML Parser](https://www.w3schools.com/xml/xml_parser.asp)
 - [Esempio AJAX](https://www.w3schools.com/xml/tryit.asp?filename=try_dom_xmlhttprequest_responsexml)
+- [Introduzione](https://www.w3schools.com/js/js_json_intro.asp)
 
+### Open Data XML e JSON
+- [dati.gov.it](https://www.dati.gov.it/search/field_resources%253Afield_format/json-160/field_resources%253Afield_format/xml-203?query=)
+- [datiopen.it](http://www.datiopen.it/it/opendata-per-tematica)
+- [awesome-json-datasets](https://github.com/jdorfman/awesome-json-datasets)
