@@ -10,7 +10,7 @@ Repository di TPSIT della classe 5J
 - [learning git branching](https://learngitbranching.js.org)
 - [esercizi](https://github.com/angelogalanti/2018-19_5J/blob/master/git/)
 
-## sistemi distribuiti
+## Sistemi Distribuiti
 - [3 Tier Server Architecture](https://www.researchgate.net/figure/A-Typical-3-Tier-Server-Architecture-Tier-1-Web-Server-Tier-2-Application-Server-Tier_fig1_221147997)
 - [Difference between application server and web server](https://stackoverflow.com/questions/936197/what-is-the-difference-between-application-server-and-web-server)
 - [Redundant server architectures](https://www.e2enetworks.com/help/knowledge-base/redundant-server-architectures-from-e2e-networks/)
