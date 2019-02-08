@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="news">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Latest Sport News</title>
+  <link rel="author" href="humans.txt">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>        
+  <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
+    @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+    .snip1529 {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+      float: left;
+      font-size: 16px;
+      line-height: 1.6em;
+      margin: 10px 1%;
+      min-width: 650px;
+      overflow: hidden;
+      position: relative;
+      text-align: left;
+      width: 100%; 
+      background-color: #000000; 
+      color: #ffffff; 
+      font-family: 'Open Sans', Arial, sans-serif; 
+      max-width: 310px; 
+    }
+
+    .snip1529 * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.25s ease;
+      transition: all 0.25s ease;
+    }
+
+    .snip1529 img {
+      max-width: 100%;
+      vertical-align: top;
+      position: relative;
+      opacity: 0.75;
+    }
+
+    .snip1529 figcaption {
+      padding: 25px 20px 25px; 
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+    }
+
+    .snip1529 .date {
+      min-height: 48px;
+      position: absolute;
+      right: 15px;
+      top: 0;
+      background-color: #fff; 
+      color: #333; 
+      font-size: 18px; 
+      font-weight: 800; 
+      min-width: 48px; 
+      padding: 10px 0; 
+      text-align: center; 
+      text-transform: uppercase; 
+    }
+
+    .snip1529 .date span {
+      display: block;
+      line-height: 14px;
+    }
+
+    .snip1529 .date .month {
+      font-size: 11px;
+    }
+
+    .snip1529 h3,
+    .snip1529 p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .snip1529 h3 {
+      font-weight: 800;
+      letter-spacing: -0.4px;
+    }
+
+
+    .snip1529 a {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      z-index: 1;
+    }
+
+    .snip1529:hover .date,
+    .snip1529.hover .date {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  </style>
+</head>
+<body>
+
+  <figure class="snip1529">
+    <img id="rss-enclosure" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample13.jpg" alt="pr-sample13" />
+    <div id="rss-pubDate" class="date"><span class="day">28</span><span class="month">Apr</span></div>
+    <figcaption>
+      <h3 id="rss-title">An Abstract Post Heading</h3>
+      <p id="rss-description">Which is worse, that everyone has his price, or that the price is always so low.</p>
+    </figcaption>
+  </figure>
+
+  <script type="text/javascript">
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+      }
+    };
+    // xhttp.open("GET", "gazzetta.xml", true);
+    xhttp.open("GET", "https://www.gazzetta.it/rss/home.xml", true);
+    xhttp.send();
+
+    function myFunction(xml) {
+      var i;
+      var xmlDoc = xml.responseXML;
+      var item = xmlDoc.getElementsByTagName("item");
+      var title = item[0].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+      var description = item[0].getElementsByTagName("description")[0].childNodes[0].nodeValue;
+      var pubDate = item[0].getElementsByTagName("pubDate")[0].childNodes[0].nodeValue;
+      var enclosure = item[0].getElementsByTagName("enclosure")[0].getAttribute("url");
+      document.getElementById("rss-title").innerHTML = stripHtml(title);
+      document.getElementById("rss-description").innerHTML = stripHtml(description);
+      document.getElementById("rss-pubDate").innerHTML = stripHtml(pubDate);
+      document.getElementById("rss-enclosure").src = enclosure;
+    }
+
+    //https://ourcodeworld.com/articles/read/376/how-to-strip-html-from-a-string-extract-only-text-content-in-javascript
+    function stripHtml(html){
+        // Create a new div element
+        var temporalDivElement = document.createElement("div");
+        // Set the HTML content with the providen
+        temporalDivElement.innerHTML = html;
+        // Retrieve the text property of the element (cross-browser support)
+        return temporalDivElement.textContent || temporalDivElement.innerText || "";
+    }
+  </script>
+</body>
+</html>
