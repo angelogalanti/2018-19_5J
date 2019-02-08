@@ -38,3 +38,13 @@ Repository di TPSIT della classe 5J
 - [dati.gov.it](https://www.dati.gov.it/search/field_resources%253Afield_format/json-160/field_resources%253Afield_format/xml-203?query=)
 - [datiopen.it](http://www.datiopen.it/it/opendata-per-tematica)
 - [awesome-json-datasets](https://github.com/jdorfman/awesome-json-datasets)
+
+### API
+- [definizione](https://stackoverflow.com/questions/7440379/what-exactly-is-the-meaning-of-an-api)
+- [spiegazione](https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82)
+- [esempio](https://jsonplaceholder.typicode.com)
+- [lista API](https://blog.rapidapi.com/most-popular-apis/)
+
+### API
+- [articolo](https://italiancoders.it/introduzione-a-rest/)
+https://italiancoders.it/rest-web-api-linee-guida/
