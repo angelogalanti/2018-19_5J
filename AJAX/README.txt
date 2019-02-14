@@ -1,3 +1,5 @@
+ORDINE ESERCIZI:
+
 XML
 tabellaCD
 artistaTitoloAnnoDelPrimo
