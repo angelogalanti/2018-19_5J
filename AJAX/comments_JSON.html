@@ -1,0 +1,53 @@
+<!doctype HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSONPlaceHolderViewer</title>
+</head>
+
+<body>
+<form>
+	<input type="text" id="numeroScelto">
+	<input type="button" value="Ricerca" onClick="esegui()">
+</form>
+<table id="tabella" border="1px">
+</table>
+<script>
+		
+		function esegui(){
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function() {
+			  if (this.readyState == 4 && this.status == 200) {
+				myObj = JSON.parse(this.responseText);				  
+				scrivi(myObj);
+			  }
+				//else 
+					//document.getElementById("tabella").innerHTML = "Tomma nun funziona un cazzo";
+			};
+			xmlhttp.open("GET", "https://jsonplaceholder.typicode.com/comments", true);
+			xmlhttp.send();
+		}
+				
+		function scrivi(myObj){
+			var numeroScelto = document.getElementById("numeroScelto").value;
+			var i = 0;
+			var tabella = "<tr align='center'><th>Post</th><th>Name</th><th>Email</th><th>Message</th></tr>";
+			
+			for (i = 0; i < myObj.length; i++){
+				if (myObj[i].postId == numeroScelto){
+					
+					tabella += "<tr align='center'>";
+					tabella += "<td>" + myObj[i].postId + "</td>";
+					tabella += "<td>" + myObj[i].name + "</td>";
+					tabella += "<td>" + myObj[i].email + "</td>";
+					tabella += "<td>" + myObj[i].body + "</td>";
+					tabella += "</tr>";
+
+				}
+				document.getElementById("tabella").innerHTML = tabella;
+			}
+		}
+	
+</script>
+</body>
+</html>
