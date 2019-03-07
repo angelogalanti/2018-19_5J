@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Esercizio 4</title>
+</head>
+
+<body>
+	<p id ="ciao"></p>
+<table id="tabella" border="1px">
+</table>
+<script>
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = function() {
+		  if (this.readyState == 4 && this.status == 200) {
+			myObj = JSON.parse(this.responseText);
+			scriviEventi(myObj);
+		  }
+		};
+		xmlhttp.open("GET", "http://www.vizgr.org/historical-events/search.php?format=json&begin_date=19840101&end_date=19841231&lang=it", true);
+		xmlhttp.send();
+		
+		
+		function scriviEventi(myObj){
+			
+			var tabella = "<tr align='center'><th>Data</th><th>Evento</th></tr>";
+		
+			//Solo l'ultimo
+			tabella += "<tr align='center'>";
+			tabella += "<td>" + myObj.result.event.date + "</td>";
+			tabella += "<td>" + myObj.result.event.description + "</td>";
+			tabella += "</tr>";
+			
+			document.getElementById("tabella").innerHTML = tabella;
+			
+		}
+	</script>
+</body>
+</html>

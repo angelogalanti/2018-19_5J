@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Esercizio 3</title>
+</head>
+
+<body>
+	<p id="riga"></p>
+	<script>
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = function() {
+		  if (this.readyState == 4 && this.status == 200) {
+			myObj = JSON.parse(this.responseText);
+			scriviEventi(myObj);
+		  }
+		};
+		xmlhttp.open("GET", "http://www.vizgr.org/historical-events/search.php?format=json&begin_date=19841125&end_date=19841125&lang=it", true);
+		xmlhttp.send();
+		
+		
+		function scriviEventi(myObj){
+			var event = myObj.result.event;
+			var date = myObj.result.event.date;
+			var description = myObj.result.event.description;
+			document.getElementById("riga").innerHTML = date + ", " + description;
+		}
+	</script>
+</body>
+</html>

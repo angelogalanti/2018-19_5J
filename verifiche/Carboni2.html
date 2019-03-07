@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Esercizio 2</title>
+</head>
+
+<body>
+	<p id="differenzaPersone"></p>
+	<script>
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = function() {
+		  if (this.readyState == 4 && this.status == 200) {
+			myObj = JSON.parse(this.responseText);
+			scriviPersone(myObj);
+		  }
+		};
+		xmlhttp.open("GET", "http://api.population.io/1.0/population/Italy/today-and-tomorrow/?format=json", true);
+		xmlhttp.send();
+		
+		
+		function scriviPersone(myObj){
+
+			
+			var personeIeri = myObj.total_population[0].population;
+			var personeOggi = myObj.total_population[1].population;
+			
+			var differenza = personeOggi - personeIeri;
+			
+			document.getElementById("differenzaPersone").innerHTML = differenza;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Esercizio 1</title>
+</head>
+
+<body>
+<p id="primaRiga"></p>
+<p id="secondaRiga"></p>
+<script>
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				stampa(this);
+			}
+		};
+		//ERRORE POLICY
+		//xhttp.open("GET", "http://www.riminiturismo.it/visitatori/ospitalita/dove-mangiare/ristoranti/xml", true);
+		
+		//SU LOCALE
+		xhttp.open("GET", "xml.xml", true);
+		xhttp.send();
+		
+		function stampa(xml){
+			var xmlDoc = xml.responseXML;
+			var schede = xmlDoc.getElementsByTagName("Scheda");
+			
+			var numeroSchede = 0;
+			for (var i = 0; i < schede.length; i++){
+				numeroSchede = numeroSchede + 1;
+			}
+			
+			var scheda = schede[1];
+			var titoloScheda = scheda.getElementsByTagName("Titolo")[0].childNodes[0].nodeValue;
+			
+			var arrayTitoloScheda = titoloScheda.split(". ");
+			var tipoScheda = arrayTitoloScheda[0];
+			var nomeScheda = arrayTitoloScheda[1];
+			
+			var indirizzoScheda = scheda.getElementsByTagName("Indirizzo")[0].childNodes[0].nodeValue;
+			
+
+			document.getElementById("primaRiga").innerHTML = "Il numero complessivo dei ristoranti della provincia di Rimini è <b>" + numeroSchede + "</b>.";
+			
+			document.getElementById("secondaRiga").innerHTML = "Uno di questi è l’<b>"  + tipoScheda + "</b> chiamato <b>" + nomeScheda + "</b> in <b>" + indirizzoScheda + "</b>.";
+		}
+	</script>
+</body>
+</html>

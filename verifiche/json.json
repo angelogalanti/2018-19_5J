@@ -1,0 +1,19 @@
+{
+   "result":{
+      "count":"2",
+      "event":{
+         "date":"1984/01/05",
+         "description":"Catania: la mafia uccide il giornalista Giuseppe Fava, direttore de ''I siciliani''.",
+         "lang":"it",
+         "category1":"Gennaio",
+         "granularity":"year"
+      },
+      "event":{
+         "date":"1984/01/05",
+         "description":"La Apple presenta il primo computer della serie Macintosh.",
+         "lang":"it",
+         "category1":"Gennaio",
+         "granularity":"year"
+      }
+   }
+}
