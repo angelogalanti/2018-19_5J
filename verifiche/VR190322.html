@@ -1,0 +1,46 @@
+<!-- 
+IL FILE JSON DA SCARICARE TRAMITE CHIAMATA AJAX SI TROVA QUI
+http://api.nobelprize.org/v1/laureate.json
+APRIRE IL FILE JSON CON FIREFOX PERCHE' LO FORMATTA CORRETTAMENTE
+1 STAMPARE IL COGNOME DI UN VINCITORE DI NOBEL
+2 STAMPARE IL COGNOME DI UN VINCITORE DI NOBEL ITALIANO
+3 STAMPARE IL COGNOME DI TUTTI I VINCITORI DI NOBEL ITALIANI
+4 STAMPARE IL NUMERO DI TUTTI I VINCITORI DI NOBEL ITALIANI
+5 STAMPARE IL NUMERO DI UOMINI E DONNE VINCITORI DI NOBEL ITALIANI
+6 COLORARE DI BLU GLI UOMINI E ROSA LE DONNE
+7 SELEZIONARE LA NAZIONALITA' DEI VINCITORI TRAMITE DROPDOWN MENU'
+ -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Esercizio</title>
+  <meta charset="UTF-8">
+  <style type="text/css">
+    .female {
+      color: pink;
+    }
+    .male {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <select id="selectBox" onchange="changeFunc(value);">
+   <option value="IT">Italy</option>
+   <option value="FR">France</option>
+   <option value="DK">Denmark</option>
+   <option value="LT">Lithuania</option>
+   <option value="YE">Yemen</option>
+   <option value="UG">Uganda</option>
+  </select>
+  <p id="howMany"></p>
+  <p id="maleOrFemale"></p>
+  <p id="nameSurname"></p>
+  <script>
+  var _0x54f4=['surname','</div>','<div\x20class=\x22female\x22>','getElementById','howMany','innerHTML','There\x20are\x20','maleOrFemale','\x20males\x20and\x20','\x20females','nameSurname','onreadystatechange','readyState','parse','open','http://api.nobelprize.org/v1/laureate.json','send','log','laureates','length','bornCountryCode','gender','male'];(function(_0x2f3e31,_0x3a89c9){var _0x2c6db2=function(_0x1fa352){while(--_0x1fa352){_0x2f3e31['push'](_0x2f3e31['shift']());}};_0x2c6db2(++_0x3a89c9);}(_0x54f4,0x136));var _0x4768=function(_0x394c95,_0x474754){_0x394c95=_0x394c95-0x0;var _0x452c34=_0x54f4[_0x394c95];return _0x452c34;};var myObj=null;var xmlhttp=new XMLHttpRequest();xmlhttp[_0x4768('0x0')]=function(){if(this[_0x4768('0x1')]==0x4&&this['status']==0xc8){myObj=JSON[_0x4768('0x2')](this['responseText']);}};xmlhttp[_0x4768('0x3')]('GET',_0x4768('0x4'),!![]);xmlhttp[_0x4768('0x5')]();function changeFunc(_0x5816f1){console[_0x4768('0x6')](myObj);var _0x17bb2a='';var _0x35a0e5=0x0;var _0x4d8625=0x0;for(var _0x3ac34c=0x0;_0x3ac34c<myObj[_0x4768('0x7')][_0x4768('0x8')];_0x3ac34c++){if(myObj['laureates'][_0x3ac34c][_0x4768('0x9')]==_0x5816f1){_0x35a0e5++;if(myObj[_0x4768('0x7')][_0x3ac34c][_0x4768('0xa')]==_0x4768('0xb')){_0x4d8625++;_0x17bb2a=_0x17bb2a+'<div\x20class=\x22male\x22>'+myObj[_0x4768('0x7')][_0x3ac34c][_0x4768('0xc')]+_0x4768('0xd');}else{_0x17bb2a=_0x17bb2a+_0x4768('0xe')+myObj[_0x4768('0x7')][_0x3ac34c][_0x4768('0xc')]+_0x4768('0xd');}}}document[_0x4768('0xf')](_0x4768('0x10'))[_0x4768('0x11')]=_0x4768('0x12')+_0x35a0e5+'\x20nobel\x20prize\x20winners';document['getElementById'](_0x4768('0x13'))[_0x4768('0x11')]=_0x4d8625+_0x4768('0x14')+(_0x35a0e5-_0x4d8625)+_0x4768('0x15');document[_0x4768('0xf')](_0x4768('0x16'))[_0x4768('0x11')]=_0x17bb2a;}
+  </script>
+</body>
+</html>
