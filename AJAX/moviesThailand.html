@@ -1,12 +1,12 @@
 <!-- 
 IL FILE JSON DA SCARICARE TRAMITE CHIAMATA AJAX SI TROVA QUI
-http://api.worldbank.org/countries/CHN/indicators/SP.POP.TOTL?per_page=5000&format=json
-IL FILE CONTIENE UNO STORICO DELLA POPOLAZIONE CINESE DAL 1960 AD OGGI
+http://showtimes.everyday.in.th/api/v2/movie/
 APRIRE IL FILE JSON CON FIREFOX PERCHE' LO FORMATTA CORRETTAMENTE
-1 STAMPARE LA POPOLAZIONE DELL'ANNO 2017
-2 STAMPARE DIFFERENZA DI POPOLAZIONE DAL 2017 AL 1960
-3 STAMPARE LA POPOLAZIONE DI TUTTI GLI ANNI 
-4 STAMPARE L'ANNO IN CUI LA POPOLAZIONE HA SUPERATO 1 MILIARDO
+1 TITOLO DEL PRIMO FILM
+2 NUMERO COMPLESSIVO DI FILM
+3 TITOLO DELL'ULTIMO FILM
+4 VISUALIZZARE L'IMMAGINE (thumbnail) DI UN FILM A SCELTA
+5 TITOLI DI TUTTI I FILM
 -->
 
 
@@ -27,7 +27,7 @@ APRIRE IL FILE JSON CON FIREFOX PERCHE' LO FORMATTA CORRETTAMENTE
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       myObj = JSON.parse(this.responseText);
-      document.getElementById("result").innerHTML = myObj._embedded.episodes[0].name;
+      document.getElementById("result").innerHTML = myObj.results[0].title;
     }
   };
   xmlhttp.open("GET", "http://showtimes.everyday.in.th/api/v2/movie/", true);
